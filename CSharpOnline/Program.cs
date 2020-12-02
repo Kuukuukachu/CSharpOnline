@@ -8,12 +8,31 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson6Exercises();
+            MyLesson7Examples();
+            // MyLesson6Exercises();
             // MyLesson6Examples();
             // MyLesson5Examples();
             // Console.WriteLine("Hello World!");
             // MyLesson5Exercises();
         }
+
+        static void MyLesson7Examples()
+        {
+            Lesson7 mySeven = new Lesson7(); //This is an OBJECT INSTANCE.
+            mySeven.BasicMath();
+            mySeven.BasicModulus();
+            mySeven.BasicCheckedOperator(46, 85);
+            mySeven.BasicCheckedOperator2();
+            mySeven.BasicAssignmentExample();
+            mySeven.MyLeftShiftOperator();
+            mySeven.MyRightShiftOperator();
+            mySeven.MyAndAssignmentOperator(10, 2);
+            mySeven.MyOrAssignmentOperator();
+            mySeven.MyXorAssignmentOperator();
+            mySeven.MyIncrementDecrementExamlpes();
+            mySeven.MyIncrementDecrementExamlpes();
+        }
+
 
         static void MyLesson6Exercises()
         {
@@ -22,8 +41,6 @@ namespace CSharpOnline
             myExercise6.Answer2Method();
             myExercise6.Answer3Method();
         }
-
-
         static void MyLesson6Examples()
         {
             Lesson6 mySix = new Lesson6();
