@@ -8,7 +8,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson7Examples();
+            MyLesson7Exercises();
+            // MyLesson7Examples();
             // MyLesson6Exercises();
             // MyLesson6Examples();
             // MyLesson5Examples();
@@ -16,6 +17,13 @@ namespace CSharpOnline
             // MyLesson5Exercises();
         }
 
+        static void MyLesson7Exercises()
+        {
+            Lesson7Exercises myWork = new Lesson7Exercises();
+            myWork.QuestionOne();
+            myWork.QuestionTwo();
+            myWork.QuestionThree();
+        }
         static void MyLesson7Examples()
         {
             Lesson7 mySeven = new Lesson7(); //This is an OBJECT INSTANCE.
