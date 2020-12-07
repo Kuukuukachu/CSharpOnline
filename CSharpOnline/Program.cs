@@ -8,6 +8,7 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
+            MyLesson9Examples();
             // MyLesson8Exercises();
             // BottlesOfBeerSong();
             // MyLesson8Examples();
@@ -18,6 +19,15 @@ namespace CSharpOnline
             // MyLesson5Examples();
             // Console.WriteLine("Hello World!");
             // MyLesson5Exercises();
+        }
+
+        static void MyLesson9Examples()
+        {
+            Lesson9 myNine = new Lesson9();
+            myNine.BasicArray();
+            myNine.MultiArray2D();
+            myNine.My3DArray();
+            myNine.MyJaggedArray();
         }
 
         static void MyLesson8Exercises()
