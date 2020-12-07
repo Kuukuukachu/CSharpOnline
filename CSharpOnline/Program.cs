@@ -8,7 +8,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            BottlesOfBeerSong();
+            // MyLesson8Exercises();
+            // BottlesOfBeerSong();
             // MyLesson8Examples();
             // MyLesson7Exercises();
             // MyLesson7Examples();
@@ -19,6 +20,13 @@ namespace CSharpOnline
             // MyLesson5Exercises();
         }
 
+        static void MyLesson8Exercises()
+        {
+            Lesson8Exercises myWork = new Lesson8Exercises();
+            myWork.QuestionOne(1, 1);
+            Console.WriteLine(myWork.QuestionTwo('G'));
+            myWork.QuestionThree();
+        }
         static void BottlesOfBeerSong()
         {
             BottlesOfBeer beer = new BottlesOfBeer();
@@ -63,8 +71,6 @@ namespace CSharpOnline
             mySeven.MyIncrementDecrementExamlpes();
             mySeven.MyIncrementDecrementExamlpes();
         }
-
-
         static void MyLesson6Exercises()
         {
             Lesson6Exercises myExercise6 = new Lesson6Exercises();
