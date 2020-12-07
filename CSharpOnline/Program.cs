@@ -8,7 +8,9 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson7Exercises();
+            BottlesOfBeerSong();
+            // MyLesson8Examples();
+            // MyLesson7Exercises();
             // MyLesson7Examples();
             // MyLesson6Exercises();
             // MyLesson6Examples();
@@ -17,6 +19,27 @@ namespace CSharpOnline
             // MyLesson5Exercises();
         }
 
+        static void BottlesOfBeerSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            Console.WriteLine(beer.LetsSing());
+        }
+        static void MyLesson8Examples()
+        {
+            Lesson8 myEight = new Lesson8();
+            myEight.BasicIfStatement();
+            myEight.BasicIfElseStatement(23);
+            Console.WriteLine(myEight.BasicIfElseChainExample(22));
+            Console.WriteLine(myEight.BasicAndConditionExample());
+            Console.WriteLine(myEight.BasicOrCondition(25));
+            myEight.BasicTernaryExample(42);
+            myEight.BasicSwitchStatement(3);
+            myEight.BasicWhileLoop();
+            myEight.BasicDoWhileLoop();
+            myEight.BasicForLoopExample(4);
+            myEight.BasicForEachExample();
+            myEight.BasicJumpStatements();
+        }
         static void MyLesson7Exercises()
         {
             Lesson7Exercises myWork = new Lesson7Exercises();
