@@ -8,7 +8,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson9Examples();
+            // MyLesson9Exercises();
+            // MyLesson9Examples();
             // MyLesson8Exercises();
             // BottlesOfBeerSong();
             // MyLesson8Examples();
@@ -21,6 +22,12 @@ namespace CSharpOnline
             // MyLesson5Exercises();
         }
 
+        static void MyLesson9Exercises()
+        {
+            Lesson9Exercises myWork = new Lesson9Exercises();
+            myWork.QuestionOne();
+            myWork.QuestionTwo();
+        }
         static void MyLesson9Examples()
         {
             Lesson9 myNine = new Lesson9();
