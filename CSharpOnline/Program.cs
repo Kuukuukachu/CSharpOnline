@@ -8,6 +8,7 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
+            MyLesson10Examples();
             // MyLesson9Exercises();
             // MyLesson9Examples();
             // MyLesson8Exercises();
@@ -22,6 +23,24 @@ namespace CSharpOnline
             // MyLesson5Exercises();
         }
 
+        static void MyLesson10Examples()
+        {
+            Lesson10 myTen = new Lesson10(); // Default constructor
+            Lesson10 myOtherTen = new Lesson10(10);
+            Lesson10 lesson10 = new Lesson10(21, "apples");
+
+            Lesson10Struct myStruct = new Lesson10Struct(9.99m, "King", "The Stand");
+
+            int myVal1 = 14, myVal2 = 14;
+
+            myTen.MyBasicRef(ref myVal1, myVal2);
+            Console.WriteLine("My Val1 = {0} | My Val2 = {1}", myVal1, myVal2);
+
+            string first, last;
+            myTen.MyBasicOut("Foghorn Leghorn", out first, out last);
+            Console.WriteLine(first);
+            Console.WriteLine(last);
+        }
         static void MyLesson9Exercises()
         {
             Lesson9Exercises myWork = new Lesson9Exercises();
