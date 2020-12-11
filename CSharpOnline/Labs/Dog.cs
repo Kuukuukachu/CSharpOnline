@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpOnline.Labs
+namespace CSharpOnline.Labwork
 {
-    class Dog
+    public class Dog
     {
         string _furColor;
         string _wetNose;
         string _tailLength;
 
-        public void TailWag()
+        public virtual void TailWag()
         {
             _furColor = "black";
             _tailLength = "long";
@@ -24,4 +24,5 @@ namespace CSharpOnline.Labs
         }
 
     }
+
 }

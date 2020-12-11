@@ -1,6 +1,8 @@
 ﻿using System;
 using CSharpOnline.Lessons;
 using CSharpOnline.Exercises;
+using CSharpOnline.Labwork;
+using static CSharpOnline.Labs.Pup;
 
 namespace CSharpOnline
 {
@@ -8,7 +10,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson11Examples();
+            MyLabwork();
+            // MyLesson11Examples();
             // Television();
             // MyLesson10Examples();
             // MyLesson9Exercises();
@@ -26,6 +29,14 @@ namespace CSharpOnline
             // House myHouse = new House();
         }
         
+        static void MyLabwork()
+        {
+            Dog myLabwork = new Dog();
+            myLabwork.NoseSniff();
+            myLabwork.TailWag();
+            Labs.Pup myLabwork2 = new Labs.Pup();
+            myLabwork2.TailWag();
+        }
         static void MyLesson11Examples()
         {
             Condo myCondo = new Condo();

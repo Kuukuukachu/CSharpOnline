@@ -4,14 +4,19 @@ using System.Text;
 
 namespace CSharpOnline.Labs
 {
-    class Pup : Dog
+        public class Pup : Labwork.Dog
     {
-        string _size;
-        string _breath;
-        
-        public void Chewing()
-        {
-            Console.WriteLine("The pup chews shoes.");
+            string _size;
+            string _breath;
+
+            public void Chewing()
+            {
+                Console.WriteLine("The pup chews shoes.");
+            }
+
+            public override void TailWag()
+            {
+                Console.WriteLine("The puppy's tail wags.");
+            }
         }
-    }
 }
