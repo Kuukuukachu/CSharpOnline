@@ -8,7 +8,9 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson10Examples();
+            MyLesson11Examples();
+            // Television();
+            // MyLesson10Examples();
             // MyLesson9Exercises();
             // MyLesson9Examples();
             // MyLesson8Exercises();
@@ -21,8 +23,25 @@ namespace CSharpOnline
             // MyLesson5Examples();
             // Console.WriteLine("Hello World!");
             // MyLesson5Exercises();
+            // House myHouse = new House();
+        }
+        
+        static void MyLesson11Examples()
+        {
+            Condo myCondo = new Condo();
+            myCondo.Maintenance();
+            myCondo.DoorOpenClose();
+            House myHouse = new House();
+            myHouse.DoorOpenClose();
+            myHouse.DoorOpenClose("red");
         }
 
+        static void Television()
+        {
+            Television myTV = new Television("60 inches", "is");
+            Television myTele = new Television(599, 4, "65 inch", "is not");
+            myTV.TurnOn();
+        }
         static void MyLesson10Examples()
         {
             Lesson10 myTen = new Lesson10(); // Default constructor

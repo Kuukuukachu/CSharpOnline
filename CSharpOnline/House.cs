@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lesson4Lab
+namespace CSharpOnline
 {
-    class House
+    public class House
     {
         // Attributes of the class
         int _windowSize;
@@ -16,10 +16,16 @@ namespace Lesson4Lab
          This method will print out
          about what the door does.
             */
-        
-        void DoorOpenClose()
+
+        public virtual void DoorOpenClose()
         {
             Console.WriteLine("The door opens");
+        }
+
+        // Method Overloading Example
+        public void DoorOpenClose(string doorColor)
+        {
+            Console.WriteLine("My door color is {0}.", doorColor);
         }
 
     }
