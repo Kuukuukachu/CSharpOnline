@@ -10,7 +10,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLabwork();
+            MyLesson12Examples();
+            // MyLabwork();
             // MyLesson11Examples();
             // Television();
             // MyLesson10Examples();
@@ -29,6 +30,14 @@ namespace CSharpOnline
             // House myHouse = new House();
         }
         
+        static void MyLesson12Examples()
+        {
+            Lesson12 myTwelve = new Lesson12();
+            myTwelve.BasicPublicMethod();
+            Lesson12Child myChild = new Lesson12Child();
+            myChild.BasicChildMethod();
+            myTwelve.BasicProtectedInternalMethod();
+        }
         static void MyLabwork()
         {
             Dog myLabwork = new Dog();
