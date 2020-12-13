@@ -4,13 +4,52 @@ using System.Text;
 
 namespace CSharpOnline
 {
-    public class House
+    class House
     {
         // Attributes of the class
-        int _windowSize;
-        string _foundation;
-        string _roofType;
-        string _doorColor;
+        protected int windowSize;
+        protected string foundation;
+        // private string _roofType;
+        // private string _doorColor;
+
+        // Lesson 13 Encapsulation - Get & Set example
+        public int WindowSize
+        {
+            get { return windowSize; }
+            private set { windowSize = value; }
+        }
+
+        public string Foundation
+        {
+            get { return foundation; }
+            set { foundation = value; }
+        }
+
+        public string Rooftype { get; set; }
+        public string DoorColor { get; set; }
+
+        // default constructor
+        public House() 
+            :this(25, "concrete")
+
+        {
+        }
+
+        // example of 'this' keyword being called from another constructor.
+        public House(int windowSize, string foundation)
+            : this(windowSize, foundation, "composite", "Red")
+        {
+
+        }
+
+        // example of 'this' keyword.
+        public House(int windowSize, string foundation, string roofType, string doorColor)
+        {
+            this.windowSize = windowSize;
+            this.foundation = foundation;
+            Rooftype = roofType; // this is an auto property
+            DoorColor = doorColor;
+        }
 
         /*
          This method will print out

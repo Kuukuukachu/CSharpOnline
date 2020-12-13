@@ -10,7 +10,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson12Examples();
+            MyLesson13Examples();
+            // MyLesson12Examples();
             // MyLabwork();
             // MyLesson11Examples();
             // Television();
@@ -28,6 +29,15 @@ namespace CSharpOnline
             // Console.WriteLine("Hello World!");
             // MyLesson5Exercises();
             // House myHouse = new House();
+        }
+
+        static void MyLesson13Examples()
+        {
+            House myHouse = new House();
+            Console.WriteLine("The door color is {0}", myHouse.DoorColor);
+            Condo myCondo = new Condo();
+            myCondo.DoorOpenClose();
+            Console.WriteLine("The foundation type is {0}", myCondo.Foundation);
         }
         
         static void MyLesson12Examples()
