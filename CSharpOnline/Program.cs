@@ -10,7 +10,7 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson13Examples();
+            // MyLesson13Examples();
             // MyLesson12Examples();
             // MyLabwork();
             // MyLesson11Examples();
@@ -68,9 +68,16 @@ namespace CSharpOnline
 
         static void Television()
         {
+            Television tV13 = new Television();
             Television myTV = new Television("60 inches", "is");
-            Television myTele = new Television(599, 4, "65 inch", "is not");
             myTV.TurnOn();
+
+            OLED myOLED = new OLED();
+            myOLED.HDTV();
+            myOLED.TurnOn();
+
+            Projectors myProjector = new Projectors();
+            myProjector.Projecting();
         }
         static void MyLesson10Examples()
         {
