@@ -10,6 +10,7 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
+            MyLesson14Examples();
             // MyLesson13Examples();
             // MyLesson12Examples();
             // MyLabwork();
@@ -31,6 +32,19 @@ namespace CSharpOnline
             // House myHouse = new House();
         }
 
+        static void MyLesson14Examples()
+        {
+            Lesson14Static.CelsiusToFahrenheit("34.5");
+            Console.WriteLine(Lesson14Static.FahrenheitToCelsius("64"));
+
+            Lesson14Derived myLesson14 = new Lesson14Derived(8);
+            myLesson14.ShowResultFeet();
+            myLesson14.ShowResultMiles();
+
+            Lesson14Base myBase = new Lesson14Derived(10);
+            myBase.ShowResultFeet();
+            
+        }
         static void MyLesson13Examples()
         {
             House myHouse = new House();
