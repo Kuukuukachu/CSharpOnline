@@ -10,7 +10,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson14Examples();
+            // MyLesson14Exercises();
+            // MyLesson14Examples();
             // MyLesson13Examples();
             // MyLesson12Examples();
             // MyLabwork();
@@ -30,6 +31,20 @@ namespace CSharpOnline
             // Console.WriteLine("Hello World!");
             // MyLesson5Exercises();
             // House myHouse = new House();
+        }
+
+        static void MyLesson14Exercises()
+        {
+            Lesson14Exercises my14Qs = new Lesson14Exercises();
+            Console.WriteLine(Lesson14Exercises.OhmVoltage(8, 10));
+            Console.WriteLine(Lesson14Exercises.OhmResistance(500, 5));
+            Console.WriteLine(Lesson14Exercises.OhmCurrent(480, 16));
+
+            WaterBirds myBirds = new Goslings();
+            myBirds.Hemisphere();
+            myBirds.SpringMigration();
+            myBirds.AutumnMigration();
+
         }
 
         static void MyLesson14Examples()
