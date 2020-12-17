@@ -10,6 +10,7 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
+            MyLesson15Examples();
             // MyLesson14Exercises();
             // MyLesson14Examples();
             // MyLesson13Examples();
@@ -31,6 +32,21 @@ namespace CSharpOnline
             // Console.WriteLine("Hello World!");
             // MyLesson5Exercises();
             // House myHouse = new House();
+        }
+
+        static void MyLesson15Examples()
+        {
+            Lesson15 my15 = new Lesson15();
+            my15.BasicEnumCasting();
+            my15.MyFavoriteFlavor(Lesson15.IceCreamFlavors.Strawberry);
+            // Constants cannot be altered, but can be used.
+            Console.WriteLine(Lesson15.words);
+            // Indexer - value calling and changing, despite an array (which cannot be changed normally) being used
+            my15[2] = 17;
+            for(int i = 0; i < my15.ConeArrayLength; i++)
+            {
+                Console.WriteLine("The value of {0} = {1}", i, my15[i]);
+            }
         }
 
         static void MyLesson14Exercises()
