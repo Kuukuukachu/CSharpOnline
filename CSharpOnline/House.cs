@@ -25,7 +25,7 @@ namespace CSharpOnline
             set { foundation = value; }
         }
 
-        public string Rooftype { get; set; }
+        public string RoofType { get; set; }
         public string DoorColor { get; set; }
 
         // default constructor
@@ -47,7 +47,7 @@ namespace CSharpOnline
         {
             this.windowSize = windowSize;
             this.foundation = foundation;
-            Rooftype = roofType; // this is an auto property
+            RoofType = roofType; // this is an auto property
             DoorColor = doorColor;
         }
 
