@@ -10,6 +10,7 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
+            MyLesson18Examples();   
             // MyLesson17Exercises();
             // MyLesson17Examples();
             // MyLesson16Exercises();
@@ -38,6 +39,16 @@ namespace CSharpOnline
             // MyLesson5Exercises();
             // House myHouse = new House();
         }
+
+        static void MyLesson18Examples()
+        {
+            Lesson18 my18 = new Lesson18();
+            House testHouse = null;
+            //my18.MyThrowExample(testHouse);
+            //my18.MyException(testHouse);
+            my18.MyArrayException();
+        }
+
         public delegate void TryOnShoes(string val);
         static void MyLesson17Exercises()
         {
