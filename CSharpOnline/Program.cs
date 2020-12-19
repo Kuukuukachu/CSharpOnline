@@ -10,7 +10,9 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson16Examples();
+            MyLesson17Examples();
+            // MyLesson16Exercises();
+            // MyLesson16Examples();
             // MyLesson15Exercises();
             // MyLesson15Examples();
             // MyLesson14Exercises();
@@ -36,6 +38,25 @@ namespace CSharpOnline
             // House myHouse = new House();
         }
 
+        public delegate void TryOn(string val);
+
+        static void MyLesson17Examples()
+        {
+            Lesson17 my17 = new Lesson17("Cowboy", 7);
+            TryOn theHat = my17.TryOnHat;
+            theHat("I tried on a " + my17.HatType + " hat that was size " + my17.HatSize + ".");
+
+            Lesson17 myLesson17 = new Lesson17();
+            Lesson17 myFav17 = new Lesson17("trucker");
+            Console.WriteLine(myFav17.MyResult);
+            Console.WriteLine(myFav17.MyLambdaExample(6));
+        }
+        static void MyLesson16Exercises()
+        {
+            Lesson16Exercises myWork = new Lesson16Exercises();
+            myWork.Question1Televisions();
+            myWork.Question2Houses();
+        }
         static void MyLesson16Examples()
         {
             Lesson16 my16 = new Lesson16();
