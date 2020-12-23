@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOnline", "CSharpOnline.csproj", "{8CF02E59-9D21-4C6A-B92E-5F8C88B60B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDesignPatterns", "..\CSharpDesignPatterns\CSharpDesignPatterns.csproj", "{C21E1EEB-73DB-48C0-A31D-5AFC945CB92C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpDesignPatterns", "..\CSharpDesignPatterns\CSharpDesignPatterns.csproj", "{C21E1EEB-73DB-48C0-A31D-5AFC945CB92C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
