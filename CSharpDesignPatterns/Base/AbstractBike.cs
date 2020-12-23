@@ -39,7 +39,7 @@ namespace CSharpDesignPatterns
         public override string ToString()
         {
             return this.GetType().Name + " Bicycle has a " + Wheel + 
-                " and the color is " + ColorType + "and it costs $" + Price + ".";
+                " and the color is " + ColorType + " and it costs $" + Price + ".";
         }
 
     } // end class

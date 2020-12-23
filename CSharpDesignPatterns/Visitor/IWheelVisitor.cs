@@ -4,9 +4,10 @@ using System.Text;
 
 namespace CSharpDesignPatterns
 {
-    public interface IWheel : IVisitable
+    public interface IWheelVisitor
     {
-        int Size { get; }
-        bool Wide { get; }
+        void Visit(IWheel wheel);
+        void Visit(Spokes spoke);
+        void Visit(Bearings bearing);
     } // end interface
 } // end namespace

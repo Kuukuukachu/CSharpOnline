@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace CSharpDesignPatterns
@@ -7,7 +8,11 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            FacadeDemo();
+            VisitorDemo();
+            // ObserverDemo();
+            // IteratorDemo2();
+            // IteratorDemo1();
+            // FacadeDemo();
             // DecoratorDemo();
             // AdapterDemo();
             // SingletonDemo();
@@ -15,6 +20,58 @@ namespace CSharpDesignPatterns
             // AbstractFactoryDemo();
         }
 
+        static void VisitorDemo()
+        {
+            IWheel wheel = new WideWheel(22);
+            wheel.AcceptVisitors(new WheelDiagnostics());
+            wheel.AcceptVisitors(new WheelInventory());
+        }
+        static void ObserverDemo()
+        {
+            Speedometer mySpeedometer = new Speedometer();
+            SpeedMonitor monitor = new SpeedMonitor(mySpeedometer);
+            Gearbox gear = new Gearbox(mySpeedometer);
+
+            mySpeedometer.CurrentSpeed = 10;
+            mySpeedometer.CurrentSpeed = 15;
+            mySpeedometer.CurrentSpeed = 20;
+            mySpeedometer.CurrentSpeed = 27;
+            mySpeedometer.CurrentSpeed = 32;
+        }
+        static void IteratorDemo2()
+        {
+            Console.WriteLine("===== Road Bikes =====");
+            RoadBikeRange rbRange = new RoadBikeRange();
+            foreach (IBicycle bicycle in rbRange.Range)
+            {
+                Console.WriteLine(bicycle);
+            }
+            Console.WriteLine("+++++ Mountain Bikes +++++");
+            MountainBikeRange mbRange = new MountainBikeRange();
+            foreach (IBicycle item in mbRange.Range)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        static void PrintIterator(IEnumerator iter)
+        {
+            while(iter.MoveNext())
+            {
+                Console.WriteLine(iter.Current);
+            }
+        }
+
+        static void IteratorDemo1()
+        {
+            Console.WriteLine("===== Road Bikes =====");
+            RoadBikeRange roadRange = new RoadBikeRange();
+            PrintIterator(roadRange.GetEnumerator());
+
+            Console.WriteLine("+++++ Mountain Bike +++++");
+            MountainBikeRange mountainRange = new MountainBikeRange();
+            PrintIterator(mountainRange.GetEnumerator());
+        }
         static void FacadeDemo()
         {
             BikeFacade facade = new BikeFacade();

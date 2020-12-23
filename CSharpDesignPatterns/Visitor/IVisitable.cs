@@ -4,9 +4,8 @@ using System.Text;
 
 namespace CSharpDesignPatterns
 {
-    public interface IWheel : IVisitable
+    public interface IVisitable
     {
-        int Size { get; }
-        bool Wide { get; }
+        void AcceptVisitors(IWheelVisitor visitor);
     } // end interface
 } // end namespace
